@@ -15,7 +15,6 @@ terraform {
   required_version = ">= 1.0.2"
 }
 
-// TEST
 
 provider "aws" {
   region = var.aws_region
@@ -24,7 +23,7 @@ provider "aws" {
       "TerminationDate" = "Permanent",
       "Environment"     = "Development",
       "Team"            = "DevOps",
-      "DeployedBy"      = "Terraform",
+      "DeployedBy"      = "Terraformm",
       "Application"     = "Terraform Backend",
       "OwnerEmail"      = "devops@example.com"
     }
