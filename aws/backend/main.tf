@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "aws-terraform-states-backend"
+    bucket         = "aws-terraform-states-backend-bakavets"
     key            = "backend/terraform.tfstate"
     region         = "eu-north-1"
     dynamodb_table = "aws-terraform-states-lock"
@@ -14,6 +14,8 @@ terraform {
   }
   required_version = ">= 1.0.2"
 }
+
+// TEST
 
 provider "aws" {
   region = var.aws_region

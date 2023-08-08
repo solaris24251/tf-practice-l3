@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "aws-terraform-states-backend"
+    bucket         = "aws-terraform-states-backend-bakavets"
     key            = "networking/sg/terraform.tfstate"
     region         = "eu-north-1"
     dynamodb_table = "aws-terraform-states-lock"
@@ -33,7 +33,7 @@ provider "aws" {
 data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
-    bucket = "aws-terraform-states-backend"
+    bucket = "aws-terraform-states-backend-bakavets"
     key    = "networking/vpc/terraform.tfstate"
     region = "eu-north-1"
   }
