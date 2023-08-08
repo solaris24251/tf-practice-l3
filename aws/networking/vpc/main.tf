@@ -23,7 +23,7 @@ provider "aws" {
       "TerminationDate" = "Permanent",
       "Environment"     = "Development",
       "Team"            = "DevOps",
-      "DeployedBy"      = "Terraform",
+      "DeployedBy"      = "Terraformm",
       "Description"     = "For General Purposes"
       "OwnerEmail"      = "devops@example.com"
       "Type"            = "Networking"
