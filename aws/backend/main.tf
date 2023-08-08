@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "aws-terraform-states-backend"
+    bucket         = "aws-terraform-states-backend-bakavets"
     key            = "backend/terraform.tfstate"
     region         = "eu-north-1"
     dynamodb_table = "aws-terraform-states-lock"
@@ -15,6 +15,7 @@ terraform {
   required_version = ">= 1.0.2"
 }
 
+
 provider "aws" {
   region = var.aws_region
   default_tags {
@@ -22,7 +23,7 @@ provider "aws" {
       "TerminationDate" = "Permanent",
       "Environment"     = "Development",
       "Team"            = "DevOps",
-      "DeployedBy"      = "Terraform",
+      "DeployedBy"      = "Terraformm",
       "Application"     = "Terraform Backend",
       "OwnerEmail"      = "devops@example.com"
     }
